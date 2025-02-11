@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ISTO - Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="logo ya page.png" width="32px" heig="32px">
+
+
+    <script>
+        function toggleMenu() {
+            document.getElementById("nav-menu").classList.toggle("active");
+        }
+    </script>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif, 'Courier New', Courier, monospace, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            background: src('bC:\Users\HOME\Desktop\isto webpage\backgroung image.jpg') no-repeat center center/cover;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        .menu-button {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            font-size: 18px;
+            z-index: 1001;
+            border-radius: 20px;
+        }
+        .nav-menu {
+            position: fixed;
+            top: 0;
+            left: -250px;
+            width: 250px;
+            height: 100%;
+            background: rgba(51, 51, 51, 0.9);
+            color: white;
+            transition: left 0.3s;
+            padding-top: 60px;
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+        }
+        .nav-menu.active {
+            left: 0;
+        }
+        .nav-menu ul {
+            list-style: none;
+            padding: 0;
+        }
+        .nav-menu ul li {
+            padding: 15px;
+            border-bottom: 1px solid #ffffff;
+        }
+        .nav-menu ul li a {
+            color: white;
+            text-decoration: none;
+            display: block;
+        }
+        .nav-menu ul li a:hover {
+            background: #007bff;
+        }
+        header {
+            text-align: center;
+            padding: 50px 20px;
+            background: rgba(0, 0, 0, 0.6);
+        }
+        .hero {
+            text-align: center;
+            padding: 50px 20px;
+            background: rgba(41, 117, 136, 0.6);
+        }
+        .hero h2 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        .hero p {
+            font-size: 1.2em;
+        }
+        footer {
+            background: rgba(0, 0, 0, 0.8);
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: auto;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <button class="menu-button" onclick="toggleMenu()">☰ Menu</button>
+    <nav id="nav-menu" class="nav-menu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <div class="logo"></div>
+        <h1>WELCOME TO ISTO ENTERPRISE</h1>
+    </header>
+    <div style="display: flex; justify-content: center; align-items: center; height: 30vh;">
+        <img src="LOGO.png" alt="logo" width="600" height="200">
+    </div>
+    
+    
+    <section class="hero">
+        <h2>Creative Media Solutions</h2>
+        <p>We offer high-quality video coverage,</p> <br> 
+        <p>photography</p> <br> 
+        <p>graphic design</p> <br>
+        <p> branding services</p> <br>
+        <p> web design </p>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 ISTO ENTERPRISE. All rights reserved.</p>
+    </footer>
+</body>
+</html>
